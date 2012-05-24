@@ -6,11 +6,17 @@
  * More information: design@highwiredesign.com
  * This header must remain with code
  */
+/*
+ * $(YOUR_SELECTOR).scaleAndZoom();
+ *
+ * Can be used on any container that can have an img as a child. 
+ * Only direct descendants of the container are affected.
+ */
 
 (function($) {
   $.fn.scaleAndZoom = function(container) {
   		//Find all the images in the chosen container and see if they need scaling
-		this.find('img').each(function(){
+		this.children('img').each(function(){
 			//Get the container width		
 			var contW = $(this).parent().width();
 			//Get the image width
@@ -18,13 +24,13 @@
 			//Set the original width as an attribute of the image for later retrieval
 			$(this).attr('originalwidth', origW);				
 			//If the image is larger than the container then scale it
-			if(origW >= contW) {
+			if(origW > contW) {
 				$(this).width(contW);	
 				$(this).css('cursor', 'se-resize');	
 			}
 		});
 		//If the image is clicked then scale it up or down
-		this.find('img').click(function(event) {
+		this.children('img').click(function(event) {
 			//Get the parent container width
 			var contW = $(this).parent().width();
 			//Get the image original width from the atttribute we set earlier			
