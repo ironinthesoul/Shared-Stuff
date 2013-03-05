@@ -1,5 +1,5 @@
 /*
- * cropAndZoom v.1.0
+ * hwScaleAndZoom v.1.1
  * (c) 2012 Highwire Design Ltd
  * Released under Creative Commons Attribution-NonCommercial-Sharealike (CC-BY-NC-SA) - www.creativecommons.org.uk
  * For commercial use please contact Highwiredesign Ltd - design@highwiredesign.com
@@ -7,14 +7,14 @@
  * This header must remain with code
  */
 /*
- * $(YOUR_SELECTOR).scaleAndZoom();
+ * $(YOUR_SELECTOR).hwScaleAndZoom();
  *
  * Can be used on any container that can have an img as a child. 
  * Only direct descendants of the container are affected.
  */
 
 (function($) {
-  $.fn.scaleAndZoom = function(container) {
+  $.fn.hwScaleAndZoom = function(container) {
   		//Find all the images in the chosen container and see if they need scaling
 		this.children('img').each(function(){
 			//Get the container width		
@@ -55,8 +55,3 @@
 		})
   };
 })( jQuery );
-
-
-
-
-
