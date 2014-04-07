@@ -1,8 +1,8 @@
 /*
  * hwScaleAndZoom v.1.1
- * (c) 2012 Highwire Design Ltd
+ * (c) 2014 Highwire Design Ltd
  * Released under Creative Commons Attribution-NonCommercial-Sharealike (CC-BY-NC-SA) - www.creativecommons.org.uk
- * For commercial use please contact Highwiredesign Ltd - design@highwiredesign.com
+ * For commercial use please contact Highwire Design Ltd - design@highwiredesign.com
  * More information: design@highwiredesign.com
  * This header must remain with code
  */
