@@ -11,7 +11,9 @@ This plugin automatically adds a [TOP] button to your page once it has been scro
 You can choose where it is positioned and what it looks like.
 
 1) Get jQuery http://jquery.com and load it in to your page
+
 2) Include this file in to your page after jQuery
+
 3) You can attach the function to any part of your HTML document, but body makes most sense:
 	$(document).ready(function() {
 		$('body').hwScrollTop();

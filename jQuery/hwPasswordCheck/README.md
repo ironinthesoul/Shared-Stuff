@@ -8,7 +8,9 @@ hwPasswordCheck v.1.0.0
 Usage
 -----
 1) Get jQuery http://jquery.com and load it in to your page
+
 2) Include this file in to your page after jQuery
+
 3) You can attach the function to any password form field,
 	$(document).ready(function() {
 		$('#password').hwPasswordCheck();
@@ -36,6 +38,7 @@ Usage
 				topScore			: 34  // Score to be considered excellent
 			}		
 		);
+
 5) The password strength meter colours the password box red until the minimum requirements are met.
    Once you start typing a password the form's submit buttons are disabled until the requirements are met.
    You can still submit the form if the password is empty. This is useful for updating user information
